@@ -6,39 +6,39 @@
 
 @layer base {
   :root {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 41 28% 95%;
+    --foreground: 158 64% 25%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 41 28% 95%;
+    --card-foreground: 158 64% 25%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 41 28% 95%;
+    --popover-foreground: 158 64% 25%;
 
-    --primary: 45 100% 51%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 158 64% 45%;
+    --primary-foreground: 41 28% 95%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 41 15% 85%;
+    --secondary-foreground: 158 64% 25%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 41 15% 85%;
+    --muted-foreground: 158 20% 40%;
 
-    --accent: 45 100% 51%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 158 64% 45%;
+    --accent-foreground: 41 28% 95%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 41 28% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 45 100% 51%;
+    --border: 41 15% 85%;
+    --input: 41 15% 85%;
+    --ring: 158 64% 45%;
 
     --radius: 0.5rem;
 
-    --gold: 45 100% 51%;
-    --dark-blue: 220 39% 11%;
-    --navy: 220 26% 14%;
+    --emerald: 158 64% 45%;
+    --beige: 41 28% 85%;
+    --sage: 158 20% 65%;
   }
 
   * {
@@ -76,11 +76,15 @@
   }
 
   .themis-glow {
-    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
+    filter: drop-shadow(0 0 20px rgba(16, 185, 129, 0.3));
   }
 
-  .gold-gradient {
-    background: linear-gradient(135deg, #d4af37, #ffd700, #b8860b);
+  .emerald-gradient {
+    background: linear-gradient(135deg, #10b981, #059669, #047857);
+  }
+
+  .beige-gradient {
+    background: linear-gradient(135deg, #f5f5dc, #e8e6d8, #d4d2c5);
   }
 
   .professional-shadow {

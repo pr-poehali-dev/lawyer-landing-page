@@ -21,17 +21,17 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-yellow-500/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-emerald-800/95 backdrop-blur-sm border-b border-emerald-500/20">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-              <Icon name="Scale" size={24} className="text-slate-900" />
+            <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg flex items-center justify-center">
+              <Icon name="Scale" size={24} className="text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-white">Адвокат</h1>
-              <p className="text-sm text-yellow-400">Уголовное право</p>
+              <h1 className="text-xl font-bold text-beige-100">Адвокат</h1>
+              <p className="text-sm text-emerald-300">Уголовное право</p>
             </div>
           </div>
 
@@ -41,7 +41,7 @@ const Header = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium"
+                className="text-beige-200 hover:text-emerald-300 transition-colors duration-300 font-medium"
               >
                 {item.label}
               </button>
@@ -52,7 +52,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="tel:+7"
-              className="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors"
+              className="flex items-center space-x-2 text-emerald-300 hover:text-emerald-200 transition-colors"
             >
               <Icon name="Phone" size={18} />
               <span className="font-medium">+7 (xxx) xxx-xx-xx</span>
@@ -62,7 +62,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white"
+            className="md:hidden text-beige-100"
           >
             <Icon name={isMenuOpen ? "X" : "Menu"} size={24} />
           </button>
@@ -70,20 +70,20 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-yellow-500/20">
+          <div className="md:hidden mt-4 py-4 border-t border-emerald-500/20">
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium text-left"
+                  className="text-beige-200 hover:text-emerald-300 transition-colors duration-300 font-medium text-left"
                 >
                   {item.label}
                 </button>
               ))}
               <a
                 href="tel:+7"
-                className="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors mt-4"
+                className="flex items-center space-x-2 text-emerald-300 hover:text-emerald-200 transition-colors mt-4"
               >
                 <Icon name="Phone" size={18} />
                 <span className="font-medium">+7 (xxx) xxx-xx-xx</span>
